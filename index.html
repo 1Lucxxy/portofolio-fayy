@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -31,7 +32,7 @@
             <div class="hero-subtitle">My name is dapaaa</div>
             <h1 class="hero-title"><span id="hero-text"></span><span class="cursor"></span></h1>
             <p class="hero-description">
-                ini apacokkkk gw udah muakkk anjenggggggg.
+                awa.
             </p>
             <div class="hero-buttons">
                 <a href="#project" class="btn btn-primary">View Project</a>
@@ -252,29 +253,35 @@
                 blrpppp brppo bzpp bpp brppoo.
             </p>
             <div class="contact-form">
-                <form>
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" required></textarea>
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
             <div class="social-links">
-                <a href="#" class="social-btn" title="GitHub">
-                    <span>G</span>
+                <a href="https://github.com/1Lucxxy" class="social-btn" title="GitHub" target="_blank">
+                    <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="#" class="social-btn" title="LinkedIn">
-                    <span>in</span>
+                <a href="#" class="social-btn" title="LinkedIn" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
                 </a>
-                <a href="#" class="social-btn" title="Email">
-                    <span>@</span>
+                <a href="#" class="social-btn" title="TikTok" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
                 </a>
-                <a href="#" class="social-btn" title="Instagram">
-                    <span>IG</span>
+                <a href="#" class="social-btn" title="Instagram" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
                 </a>
             </div>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script>
+        (function(){
+            emailjs.init("dmUhaNKhFnNFpdzkf-8To");
+        })();
+        </script>
 
     <script src="script.js"></script>
 </body>

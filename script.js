@@ -117,3 +117,21 @@
                 hamburger.classList.remove('open');
             });
         });
+
+        // Kirim email dari form (EmailJS)
+        const form = document.getElementById('contact-form');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            emailjs.sendForm(
+                'service_nurfado',   // ganti dengan Service ID kamu
+                'template_pq8dbdp',  // ganti dengan Template ID kamu
+                this
+            ).then(function() {
+                alert('Pesan berhasil terkirim ke email kamu ✅');
+                form.reset();
+            }, function(error) {
+                alert('Gagal mengirim pesan ❌: ' + error.text);
+            });
+        });
